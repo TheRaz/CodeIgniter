@@ -255,13 +255,13 @@ if ( ! function_exists('doctype'))
 			if (empty($_doctypes) OR ! is_array($_doctypes))
 			{
 				$doctypes = array();
-				return FALSE;
+				return NULL;
 			}
 
 			$doctypes = $_doctypes;
 		}
 
-		return isset($doctypes[$type]) ? $doctypes[$type] : FALSE;
+		return isset($doctypes[$type]) ? $doctypes[$type] : NULL;
 	}
 }
 
